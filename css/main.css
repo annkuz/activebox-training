@@ -1,0 +1,697 @@
+/*  Fonts  */
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+ 
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ 
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-light';
+    src: url('../fonts/raleway-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cardo-italic';
+    src: url('../fonts/cardo-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/open-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('../fonts/open-sans-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* GENERAL CSS */
+
+h1              { font-size: 2em;}
+h2              { font-size: 1.5em;}
+h3              { font-size: 1.17em;}
+h5              { font-size: .83em;}
+h6              { font-size: .75em;}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+header, section, footer {
+    width: 100%
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    display: block;
+    background: url('../img/bg-header.png') no-repeat;
+}
+
+
+.logo-menu-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    z-index: 999;
+    
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+.logo-menu-section .container {
+    padding: 40px 0;
+    border-bottom: .5px solid #606376;
+    
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+}
+
+header nav {
+    float: right;
+    padding-top: 5px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 55px;
+    
+}
+
+header nav ul li a {
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #cccdd3;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+/* Sticky Navigation */
+
+.sticky-nav {
+    height: 75px;
+    background-color: #292C47; 
+}
+
+#sticky-nav-container {
+    border: 0 transparent;
+    padding: 25px 0;
+}
+
+#transition {
+    transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+/* End Sticky Navigation */
+
+.slogan-section {
+    text-align: center;
+    padding: 350px 150px;
+    color: #fff;
+}
+
+.slogan-section h1 {
+    font-family: "open-sans-bold", arial, sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    
+}
+
+.slogan-section p {
+    font-family: "raleway-regular", arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 100px;
+    line-height: 1.5;
+}
+
+.slogan-section a {
+    padding: 15px 50px;
+    background-color: #e84545;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "raleway-semibold", arial,sans-serif;
+    font-size: 14px;
+    
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.slogan-section a:hover {
+    background-color: #e83333;
+}
+
+/* FEATURES */
+
+.features-section .container {
+    padding-top: 100px;
+}
+
+.features-section ul {
+    list-style: none;
+    float:left;
+}
+
+.features-section ul li {
+    float:left;
+    width: 300px;
+    margin: 0 50px 70px 50px;
+    text-align: center;
+    color: #6c7279;
+    font-family: "raleway-regular", arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features-section ul li h3 {
+    color: #6c7279;
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 18px 0;
+}
+
+.features-section ul li .feature-icon-1 {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: url('../img/icon1.png') no-repeat;
+}
+
+.features-section ul li .feature-icon-2 {
+    display: inline-block;
+    height: 60px;
+    width: 73px;
+    background: url('../img/icon2.png') no-repeat;
+}
+
+.features-section ul li .feature-icon-3 {
+    display: inline-block;
+    height: 60px;
+    width: 41px;
+    background: url('../img/icon3.png') no-repeat;
+}
+
+.features-section ul li .feature-icon-4 {
+    display: inline-block;
+    height: 60px;
+    width: 56px;
+    background: url('../img/icon4.png') no-repeat;
+}
+
+.features-section ul li .feature-icon-5 {
+    display: inline-block;
+    height: 60px;
+    width: 72px;
+    background: url('../img/icon5.png') no-repeat;
+}
+
+.features-section ul li .feature-icon-6 {
+    display: inline-block;
+    height: 60px;
+    width: 79px;
+    background: url('../img/icon6.png') no-repeat;
+}
+
+/* WORKS */
+
+.works-section {
+    width: 100%;
+}
+
+.works-section ul {
+    float:left;
+    list-style: none;
+}
+
+.works-section ul li {
+    display: block;
+    float: left;
+    border: 0.5px solid #fff;
+    width: 25%;
+    box-sizing: border-box;
+    max-height: 350px;
+    position: relative;
+    overflow: hidden;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    
+}
+
+.works-section ul li img {
+    height: 350px;
+    width: 650px;
+    
+    transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+   }
+
+.works-section ul li a:hover img {
+   transform:scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.works-section ul li a .overlay { 
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232,69,69, .9);
+    opacity: 0;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+
+.works-section ul li .overlay-caption {
+    text-align: center;
+    color: #fff;
+    margin-top: calc(350px/2 - 20px);
+    font-size: 14px;
+}
+
+.works-section ul li .overlay-caption h3 {
+    margin-bottom: 7px;
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.works-section ul li .overlay-caption p {
+    font-family: "raleway-regular", arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.works-section ul li:hover .overlay {
+    opacity: 1;
+}
+
+/* TEAM */
+
+.team-section .container {
+    padding: 100px 0;
+}
+
+.team-section ul {
+    float: left;
+    list-style: none;
+}
+
+.team-section ul li {
+    float: left;
+    width: 270px;
+    margin-right: 30px;
+}
+
+.team-section ul li img {
+    margin-bottom: 20px;
+}
+
+.team-section ul li .team-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: "raleway-regular", arial,sans-serif;
+    color: #6c7279;
+}
+
+.team-section ul li .team-position {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "raleway-regular", arial,sans-serif;
+    color: #e84545;
+}
+
+.team-section ul li p {
+    color: #6c7279;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "raleway-regular", arial,sans-serif;
+    line-height: 1.5;
+}
+
+.team-section ul li .team-sm span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../img/icons-sm-gray.png') no-repeat;
+    vertical-align: middle;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    
+}
+
+.team-section ul li .team-sm a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #c6cacc;
+    
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.team-section ul li .team-sm a:hover span {
+    background: url('../img/icons-sm-white.png') no-repeat;
+    
+}
+
+.team-section ul li .team-sm a:hover {
+    background-color: #e84545;
+}
+
+.team-section ul li .team-sm .fb,
+.team-section ul li .team-sm:hover .fb {
+    background-position: 0px 1px;
+}
+
+.team-section ul li .team-sm .tw,
+.team-section ul li .team-sm:hover .tw {
+    background-position: 0px -20px;
+}
+
+.team-section ul li .team-sm .in,
+.team-section ul li .team-sm:hover .in {
+    background-position: 0px -40px;
+}
+
+/* SLIDER */
+.slider-section {
+    width: 100%;
+    background-color: #53354a;
+}
+.slider-image-side {
+    position: relative;
+    display: inline-block;
+    width: 650px;
+    
+    //float: left;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.slider-image-side .slides {
+    display: block;
+   // display: inline-block;
+    position: relative;
+    list-style: none;
+    white-space: nowrap;
+   // float: left;
+}
+
+.slider-image-side .slides > li {
+    display: inline-block;
+    position: relative;
+    //float: left;
+}
+
+.slider-image-side .slides > li > img {
+    width: 100%;
+}
+
+.slider-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slider-button li{
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: .1px;
+    border: 5px solid rgba(255,255,255,.5);
+    
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+#active-slide-button {
+     display: inline-block;
+   // margin: 10px 5px;
+    font-size: .1px;
+    border: 5px solid rgba(255,255,255, .9);
+    
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.slider-quote-side  {
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.slider-quote-side p {
+    margin: 100px 100px 30px 100px;
+    font-size: 36px;
+    font-family: "cardo-italic", arial, sans-serif;
+    color: #fff;
+}
+
+.slider-quote-side .slider-quote-author {
+    margin-left: 100px;
+    font-size: 13px;
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* MOTIVATION */
+
+.motivation-section {
+    text-align: center;
+}
+.motivation-section h2 {
+    font-family: "raleway-light", arial, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.motivation-section span {
+    text-transform: uppercase;
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.motivation-section .motivation-button {
+    display: inline-block;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    background-color: #e84545;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-family: "raleway-semi-bold", arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.motivation-section .motivation-button:hover {
+    background-color: #e83333;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #3a3e64;
+    height: 250px;
+    
+}
+.footer-address-section,
+.footer-share-section,
+.footer-about-section {
+    display: inline-block;
+    width: 399px;
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    float:left;
+    text-align: center;
+    font-family: "raleway-regular", arial, sans-serif;
+    line-height: 1.5;
+}
+
+.footer-address-section h2,
+.footer-share-section h2,
+.footer-about-section h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "raleway-bold", arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer-share-button {
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    
+    text-align: center;
+    
+    margin-right: 3px;
+    margin-left: 3px;
+    
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+.footer-share-button span {
+    display: inline-block;
+    background-image: url('../img/icons-sm-white.png');
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.footer-share-section .fb span{
+    background-position: 0px 1px;
+}
+
+.footer-share-section .tw span{
+    background-position: 0 -20px;
+}
+
+.footer-share-section .in span{
+    background-position: 0 -40px;
+}
+
+.footer-share-button:hover {
+    background-color:#e84545;
+    border-color:#e84545;
+}
+
